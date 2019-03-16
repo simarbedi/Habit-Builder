@@ -1,5 +1,6 @@
 package com.kars.second.habitbuilder;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +19,11 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class MainViewHabit extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.kars.second.habitbuilder.Login.LoginActivity;
 
+public class MainViewHabit extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -77,13 +81,25 @@ public class MainViewHabit extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.logoutMenu:
+                logoutCurrentUser();
+                break;
+
+            case R.id.action_settings:
+                break;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
+    private void logoutCurrentUser(){
+        mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+        Intent mIntentNew = new Intent(this, LoginActivity.class);
+        startActivity(mIntentNew);
+        finish();
+    }
     /**
      * A placeholder fragment containing a simple view.
      */
