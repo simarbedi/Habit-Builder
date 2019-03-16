@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "886137739388",
+    "firebase_url": "https://habit-builder-3e0d4.firebaseio.com",
+    "project_id": "habit-builder-3e0d4",
+    "storage_bucket": "habit-builder-3e0d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886137739388:android:facb215a75f596b5",
+        "android_client_info": {
+          "package_name": "com.kars.second.habitbuilder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886137739388-nad9lkama26530n3mp5gpd292sdt29b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-_AcrJ0_ykPeYZdToRtDANXI6qRcFC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
