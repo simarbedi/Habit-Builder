@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "886137739388-6ekksa5b09ut2bvi9hlq78vav2j60meu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kars.second.habitbuilder",
+            "certificate_hash": "fa2fb8afe47a6ff56e2963fea9fe959cbe11ac0f"
+          }
+        },
+        {
           "client_id": "886137739388-nad9lkama26530n3mp5gpd292sdt29b8.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886137739388-nad9lkama26530n3mp5gpd292sdt29b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
